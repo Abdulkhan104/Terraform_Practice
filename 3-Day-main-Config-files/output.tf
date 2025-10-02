@@ -1,7 +1,7 @@
-output "dev" {
+output "public_ip" {
     value = aws_instance.dev.public_ip
 }
 
-output "prod" {
-   value = aws_instance.prod.private_ip
+output "private_ip" {
+   value = aws_instance.dev.private_ip
 }
