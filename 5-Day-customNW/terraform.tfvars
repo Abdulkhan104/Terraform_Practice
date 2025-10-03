@@ -1,34 +1,34 @@
-#VPC
+#my cust vpc
 vpc_cidr = "10.0.0.0/16"
 vpc_name = "my-vpc"
 
-#Subnet-public
+#pub subnet
 subnet1_cidr = "10.0.1.0/24"
 subnet1_name = "public-subnet"
 
-#Subnet-private
+#pvt subnet
 subnet2_cidr = "10.0.2.0/24"
 subnet2_name = "private-subnet"
 
-#IGW
+#internate gateway
 igw_name = "my-igw"
 
-#EIP
+#elastic=ip
 eip_name = "my-eip"
 
-#NAT
+#nat
 nat_name = "my-nat-gateway"
 
-#RT-public
+#rout tble public
 public_rt_name = "public-rt"
 
-#RT-private
+#rout tble private
 private_rt_name = "private-rt"
 
-#SG
+#mysg tf vars
 security_group_name = "my-sg"
 
-
-instance_ami  = "ami-0abcdef1234567890"
+#ec2tance
+instance_ami  = "ami-01b6d88af12965bb6"
 instance_type = "t2.micro"
-instance_name = "my-ec2"
+instance_name = "abdulEc2WithTeraform"

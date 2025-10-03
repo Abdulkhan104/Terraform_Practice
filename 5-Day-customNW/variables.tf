@@ -1,84 +1,82 @@
-#VPC
+#vpc
 variable "vpc_cidr" {
-  description = "CIDR block for the VPC"
+  description = "cidr block "
   type        = string
 }
 
 variable "vpc_name" {
-  description = "Name tag for VPC"
+  description = "my vpc cust"
   type        = string
 }
 
-#Subnet-public
+#Subnet--pub
 variable "subnet1_cidr" {
-  description = "CIDR block for subnet 1 (public)"
+  description = "sub 1 pub"
   type        = string
 }
 
 variable "subnet1_name" {
-  description = "Name tag for Subnet 1"
+  description = "sub 1"
   type        = string
 }
 
-#Subnet-private
+#Subnet-pvt
 variable "subnet2_cidr" {
-  description = "CIDR block for subnet 2 (private)"
+  description = "sub2 pvt"
   type        = string
 }
 
 variable "subnet2_name" {
-  description = "Name tag for Subnet 2"
+  description = "sub2"
   type        = string
 }
 
-#IGW
+#igw
 variable "igw_name" {
-  description = "Name tag for Internet Gateway"
+  description = "Igw"
   type        = string
 }
 
-#EIP
+#eip
 variable "eip_name" {
-  description = "Name tag for Elastic IP"
+  description = "lastic IP"
   type        = string
 }
 
-#NAT
+#notty
 variable "nat_name" {
-  description = "Name tag for NAT Gateway"
+  description = "NAT"
   type        = string
 }
 
-#RT-public
+#Rt-pub
 variable "public_rt_name" {
-  description = "Name tag for Public Route Table"
+  description = "my rt public"
   type        = string
 }
 
-#RT-private
+#rt-pvt
 variable "private_rt_name" {
-  description = "Name tag for Private Route Table"
+  description = "my rt private" 
   type        = string
 }
 
-#SG
+#sg
 variable "security_group_name" {
-  description = "Name tag for Security Group"
+  description = "sg var"
   type        = string
 }
 
-#EC2
+#ec2tance
 variable "instance_ami" {
-  description = "AMI ID for the EC2 instance"
+  description = "ami id"
   type        = string
 }
 
 variable "instance_type" {
-  description = "EC2 instance type"
   type        = string
 }
 
 variable "instance_name" {
-  description = "Name tag for EC2 instance"
   type        = string
 }

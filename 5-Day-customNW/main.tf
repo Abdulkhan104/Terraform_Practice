@@ -128,12 +128,13 @@ resource "aws_security_group" "dev_sg" {
 }
 
 #Ec
-resource "aws_instance" "dev_server" {
-  ami                    = var.instance_ami
-  instance_type          = var.instance_type
-  subnet_id              = aws_subnet.dev_subnet1.id
-  vpc_security_group_ids = [aws_security_group.dev_sg.id]
-  tags = {
-    Name = var.instance_name
+
+  resource "aws_instance" "dev_server" {
+    ami                    = "ami-01b6d88af12965bb6"
+    instance_type          = var.instance_type
+    subnet_id              = aws_subnet.dev_subnet1.id
+    vpc_security_group_ids = [aws_security_group.dev_sg.id]
+    tags = {
+      Name = var.instance_name
+    }
   }
-}
